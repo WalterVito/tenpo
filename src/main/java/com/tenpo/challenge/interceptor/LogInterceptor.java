@@ -5,12 +5,14 @@ import com.tenpo.challenge.repository.LogRepository;
 import com.tenpo.challenge.repository.PercentageApiRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.AsyncHandlerInterceptor;
 
+@Slf4j
 @Component
 public class LogInterceptor implements AsyncHandlerInterceptor {
 
@@ -25,15 +27,8 @@ public class LogInterceptor implements AsyncHandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        LOGGER.debug("new request uri message {}",request.getRequestURI());
-        System.out.println("object " + response.toString());
-        logRepository.save(new Log(request.getRequestURI()));
-    }
+        LOGGER.info("new request uri message {}",request.getRequestURI());
 
-
-    @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        LOGGER.debug("new request uri message {}",request.getRequestURI());
-        return AsyncHandlerInterceptor.super.preHandle(request, response, handler);
+        // logRepository.save(new Log(request.getRequestURI()));
     }
 }

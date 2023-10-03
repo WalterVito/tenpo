@@ -19,9 +19,7 @@ public class MathController {
 
     @PostMapping("/sum")
     public ResultDto sum(@RequestBody SumDto sumDto) {
-        System.out.println("sum controller hit");
         return this.mathService.sum(sumDto);
-
     }
 
 }
