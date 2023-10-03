@@ -18,7 +18,7 @@ public class MathController {
     }
 
     @PostMapping("/sum")
-    public ResultDto sum(@RequestBody SumDto sumDto) {
+    public ResultDto sum(@RequestBody SumDto sumDto) throws Exception {
         return this.mathService.sum(sumDto);
     }
 

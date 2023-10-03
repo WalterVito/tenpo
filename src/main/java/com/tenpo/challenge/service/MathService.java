@@ -6,5 +6,5 @@ import com.tenpo.challenge.dto.SumDto;
 public interface MathService {
 
 
-    ResultDto sum(SumDto sumDto);
+    ResultDto sum(SumDto sumDto) throws Exception;
 }

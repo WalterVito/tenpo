@@ -1,11 +1,13 @@
 com/tenpo/challenge/repository/LogRepository.class
 com/tenpo/challenge/service/impl/MathServiceImpl.class
+com/tenpo/challenge/repository/cache/CacheStore.class
 com/tenpo/challenge/repository/impl/PercentageApiRepositoryMock.class
 com/tenpo/challenge/interceptor/LogInterceptor.class
 com/tenpo/challenge/exception/CustomExceptionHandler.class
 com/tenpo/challenge/common/ExceptionBase.class
 com/tenpo/challenge/exception/RepositoryException.class
 com/tenpo/challenge/common/ErrorResponse.class
+com/tenpo/challenge/repository/cache/CacheStoreBeans.class
 com/tenpo/challenge/repository/PercentageApiRepository.class
 com/tenpo/challenge/service/MathService.class
 com/tenpo/challenge/config/AppConfig.class
