@@ -1,6 +1,6 @@
 package com.tenpo.challenge.config;
 
-import com.tenpo.challenge.interceptor.LogInterceptor;
+import com.tenpo.challenge.interceptor.InterceptorApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -10,10 +10,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class AppConfig implements WebMvcConfigurer {
 
     @Autowired
-    private LogInterceptor logInterceptor;
+    private InterceptorApi interceptorApi;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor( logInterceptor );
+        registry.addInterceptor( interceptorApi );
     }
 }
