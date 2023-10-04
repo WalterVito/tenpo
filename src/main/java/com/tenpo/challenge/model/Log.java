@@ -29,10 +29,11 @@ public class Log {
     @Column(name = "response")
     private String response;
 
-    public Log(String endpoint,String request,String response) {
+    public Log(String endpoint,String request,String response,String qs) {
         this.endpoint = endpoint;
         this.request = request;
         this.response = response;
+        this.queryString = qs;
         this.unixTimestamp = System.currentTimeMillis() / 1000;
     }
 

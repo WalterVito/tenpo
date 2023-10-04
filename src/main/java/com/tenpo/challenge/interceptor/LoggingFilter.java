@@ -17,6 +17,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.stream.Collectors;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -42,7 +43,8 @@ public class LoggingFilter extends OncePerRequestFilter {
 
                 String responseBody = IOUtils.toString(responseWrapper.getContentInputStream(), UTF_8).replaceAll("[\\n\\t ]", "");
                 String requestBody = new String(requestWrapper.getContentAsByteArray()).replaceAll("[\\n\\t ]", "");
-                var log = new Log(httpServletRequest.getRequestURI(), requestBody, responseBody);
+                var qs = requestWrapper.getQueryString();
+                var log = new Log(httpServletRequest.getRequestURI(), requestBody, responseBody,qs);
                 responseWrapper.copyBodyToResponse();
                 logRepository.save(log);
 

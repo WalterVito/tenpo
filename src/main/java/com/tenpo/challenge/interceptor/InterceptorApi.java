@@ -2,13 +2,9 @@ package com.tenpo.challenge.interceptor;
 
 import com.google.common.util.concurrent.RateLimiter;
 import com.tenpo.challenge.exception.RateLimitException;
-import com.tenpo.challenge.repository.LogRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.AsyncHandlerInterceptor;
 

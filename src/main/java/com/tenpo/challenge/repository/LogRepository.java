@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface LogRepository extends JpaRepository<Log,Long> {
     @Async
-    public <S extends Log> S save(S log);
+    <S extends Log> S save(S log);
 
     Page<Log> findByEndpointContaining(String endpoint, Pageable pageable);
 }
