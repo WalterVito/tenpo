@@ -1,7 +1,9 @@
+/Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/controller/HistoryController.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/controller/MathController.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/ChallengeApplication.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/exception/RepositoryException.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/exception/CustomExceptionHandler.java
+/Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/interceptor/LoggingFilter.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/repository/cache/CacheStore.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/model/Log.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/service/MathService.java
@@ -9,11 +11,13 @@
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/exception/RateLimitException.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/repository/PercentageApiRepository.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/common/ErrorResponse.java
+/Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/service/LogService.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/repository/LogRepository.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/repository/cache/CacheStoreBeans.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/dto/SumDto.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/dto/ResultDto.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/config/AppConfig.java
+/Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/service/impl/LogServiceImpl.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/interceptor/InterceptorApi.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/repository/impl/PercentageApiRepositoryMock.java
 /Users/waltervito/Documents/repos/github/tenpo/src/main/java/com/tenpo/challenge/common/ExceptionBase.java

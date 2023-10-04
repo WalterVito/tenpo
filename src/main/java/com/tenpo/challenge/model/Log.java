@@ -25,7 +25,7 @@ public class Log {
     @Column(name = "request")
     private String request;
 
-    @Column(name = "response")
+    @Column(name = "response" , length=10485760)
     private String response;
 
     public Log(String endpoint,String request,String response,String qs) {

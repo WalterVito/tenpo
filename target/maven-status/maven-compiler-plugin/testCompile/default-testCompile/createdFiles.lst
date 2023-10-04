@@ -1,1 +1,5 @@
-com/tenpo/challenge/ApplicationTests.class
+com/tenpo/challenge/controller/HistoryControllerTest.class
+com/tenpo/challenge/service/impl/MathServiceImplTest.class
+com/tenpo/challenge/controller/MathControllerTest.class
+com/tenpo/challenge/repository/cache/CacheStoreTest.class
+com/tenpo/challenge/exception/CustomExceptionHandlerTest.class

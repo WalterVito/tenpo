@@ -1,1 +1,5 @@
-/Users/waltervito/Documents/repos/github/tenpo/src/test/java/com/tenpo/challenge/ApplicationTests.java
+/Users/waltervito/Documents/repos/github/tenpo/src/test/java/com/tenpo/challenge/exception/CustomExceptionHandlerTest.java
+/Users/waltervito/Documents/repos/github/tenpo/src/test/java/com/tenpo/challenge/repository/cache/CacheStoreTest.java
+/Users/waltervito/Documents/repos/github/tenpo/src/test/java/com/tenpo/challenge/service/impl/MathServiceImplTest.java
+/Users/waltervito/Documents/repos/github/tenpo/src/test/java/com/tenpo/challenge/controller/MathControllerTest.java
+/Users/waltervito/Documents/repos/github/tenpo/src/test/java/com/tenpo/challenge/controller/HistoryControllerTest.java
