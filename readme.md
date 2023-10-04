@@ -1,9 +1,22 @@
 ## Set up 
 
 # docker compose 
-
+* ./mvnw clean package -DskipTests
 * docker compose build
 * docker compose up
+
+  ![image](https://github.com/WalterVito/tenpo/assets/31138725/fe681c3a-80c6-418e-84aa-bdd6fc1ecfc4)
+
+
+#Tests run
+
+*./mvnw test 
+
+![image](https://github.com/WalterVito/tenpo/assets/31138725/fc04ab38-a2bd-42b0-82c9-eabd848b5df4)
+
+# PostmanCollection
+
+*in the root path > tenpo.postman_collection.json
 
 # Tasks and checklist
 Debes desarrollar una API REST en Spring Boot utilizando java 11 o superior, con las siguientes funcionalidades:
@@ -14,6 +27,7 @@ devuelto por el servicio externo es 10, entonces (5 + 5) + 10% = 11). Se deben t
 consideraciones:
 
 - [x] El servicio externo puede ser un mock, tiene que devolver el % sumado. 
+![image](https://github.com/WalterVito/tenpo/assets/31138725/9647c1f9-d960-486d-b4d4-a514d08f5c82)
 
 
 - [x] With Cache Implementation - Dado que ese % varía poco, podemos considerar que el valor que devuelve ese servicio no va cambiar por 30 minutos. 
@@ -29,10 +43,18 @@ Json, con data paginada. El guardado del historial de llamadas no debe sumar tie
 falla, no debe impactar el llamado al servicio principal.
  **  (Implement logging filter getting data off all request / responses and store in a table in postgreSql ) **
 
+<img width="994" alt="image" src="https://github.com/WalterVito/tenpo/assets/31138725/6faf5a7c-c472-49e4-be6b-725a5ca6e48b">
+
+![image](https://github.com/WalterVito/tenpo/assets/31138725/bc85898a-9f06-45ac-bbf9-64ebd5120723)
+
+
+
 - [x]La api soporta recibir como máximo 3 rpm (request / minuto), en caso de superar ese umbral, debe retornar un error con
 el código http y mensaje adecuado.
 **  (Done. using ratelimiter from com.google.guava with an interceptor java . If rate limit is excedeed return a custom exception
 managed with a 429 status code )**
+![image](https://github.com/WalterVito/tenpo/assets/31138725/d0a4d9b7-5eb6-4648-a274-977d6db2ea8c)
+
 
 - [x] El historial se debe almacenar en una database PostgreSQL.
 
