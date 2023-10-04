@@ -16,7 +16,7 @@ public class PercentageApiRepositoryMock implements PercentageApiRepository {
     static final int maxPercentage = 100;
 
     @Override
-    public Optional<PercentageDto> Get() {
+    public Optional<PercentageDto> Get() throws Exception{
         //int forcedEx = 1/0;
         Random rand = new Random();
         var random = rand.nextInt(maxRand - min + 1) + min;

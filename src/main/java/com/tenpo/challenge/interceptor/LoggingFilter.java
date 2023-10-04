@@ -1,5 +1,4 @@
 package com.tenpo.challenge.interceptor;
-import java.util.Map;
 import com.tenpo.challenge.model.Log;
 import com.tenpo.challenge.repository.LogRepository;
 import org.apache.commons.io.IOUtils;
@@ -17,15 +16,12 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.util.stream.Collectors;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 
 @Component
 public class LoggingFilter extends OncePerRequestFilter {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(LoggingFilter.class);
 
     @Autowired
     private final LogRepository logRepository;

@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class InterceptorApi implements AsyncHandlerInterceptor {
     private final double numHitsPerPeriod = 3.0;
-    private long numHitsAvailable = 0;
+    private double numHitsAvailable;
     private final RateLimiter rateLimiter;
     private transient final Object doseLock;
 
@@ -28,7 +28,7 @@ public class InterceptorApi implements AsyncHandlerInterceptor {
     }
 
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws RateLimitException {
         if (!consume()) {
             throw new RateLimitException(String.format("requests limits api current rpm is %.0f",numHitsPerPeriod));
         }

@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 public interface PercentageApiRepository  {
-    Optional<PercentageDto> Get();
+    Optional<PercentageDto> Get() throws Exception;
 }

@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @Data
 @Table(name = "api_log")
 @NoArgsConstructor
-//@TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
 public class Log {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -19,13 +19,14 @@ public class MathServiceImpl implements MathService {
     static final int retries = 3;
     private final PercentageApiRepository percentageApiRepository;
 
-    @Autowired
     CacheStore<PercentageDto> percentageCache;
 
     @Autowired
     public MathServiceImpl(
-            PercentageApiRepository percentageApiRepository) {
+            PercentageApiRepository percentageApiRepository,
+            CacheStore<PercentageDto> percentageCache) {
         this.percentageApiRepository = percentageApiRepository;
+        this.percentageCache = percentageCache;
     }
 
 

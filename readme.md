@@ -1,3 +1,13 @@
+FOR RUNNING PROJECT >
+
+docker compose dependency
+
+docker compose build
+
+docker compose up
+
+->
+
 Debes desarrollar una API REST en Spring Boot utilizando java 11 o superior, con las siguientes funcionalidades:
 
 Debe contener un servicio llamado por api-rest que reciba 2 números, los sume, y le aplique una suba de un porcentaje
